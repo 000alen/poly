@@ -6,6 +6,7 @@ import uuid
 import hashlib
 import base64
 import functools
+import traceback
 
 
 @functools.cache
@@ -50,4 +51,5 @@ try:
     exec(d(hex(x(h(s())) ^ x(K))[2:], S))
     m()
 except:
-    print("Integrity error")
+    print("Integrity error\n")
+    print(traceback.format_exc())
