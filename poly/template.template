@@ -1,4 +1,4 @@
-S = "{content}"
+S = $content
 SELF = __file__
 
 
